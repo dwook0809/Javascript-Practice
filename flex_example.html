@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_example</title>
+
+    <style>
+
+        .container1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 100px;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: yellow;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4{
+            height: 100%;
+        }
+
+        .box1{
+            display: flex;
+            justify-content: center;
+            flex:2;
+            background-color: red;
+        }
+
+        .box9 {
+            background-color: rgb(248, 104, 128);
+            height: 6vh;
+            width: 6vw;
+        }
+
+        .box2{
+            flex:0.5;
+            background-color: orange;
+        }
+
+        .box3{
+            flex:1;
+            background-color: blue;
+        }
+
+        .box4{
+            flex:1.5;
+            background-color: green;
+        }
+
+        .box5{
+            background-color: pink;
+            height: 15vh;
+            width: 8vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1.5;
+        }
+
+        .inbox {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: tomato;
+            height: 9vh;
+            width: 16vw;
+        }
+
+        .inbox_inbox {
+            background-color: brown;
+            height: 7vh;
+            width: 3vw;
+        }
+
+        .box0 {
+            background-color: rgb(151, 85, 96);
+            height: 18vh;
+            width: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box00 {
+            background-color: rgb(63, 60, 60);
+            height: 8vh;
+            width: 4vw;
+        }
+
+        .box6{
+            background-color: mediumslateblue;
+            height: 21vh;
+            width: 13vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex: 1;
+        }
+
+        .box000 {
+            background-color: rgb(39, 26, 109);
+            height: 11vh;
+            width: 11vw;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .box0000 {
+            background-color: rgb(85, 196, 135);
+            height: 9vh;
+            width: 5vw;
+        }
+
+        .box7{
+            background-color: aquamarine;
+            height: 35vh;
+            width: 13vw;
+            display: flex;
+            align-items: center;
+            flex: 2;
+        }
+
+        .box00000 {
+            background-color: rgb(45, 187, 140);
+            height: 15vh;
+            width: 20vw;
+        }
+
+        .box8{
+            background-color: rgb(187, 51, 114);
+            height: 25vh;
+            width: 10vw;
+            flex: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box1">
+            <div class="box9"></div>
+        </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+    <div class="container2">
+        <div class="box5">
+            <div class="inbox">
+                <div class="inbox_inbox"></div>
+            </div>
+        </div>
+        <div class="box0">
+            <div class="box00"></div>
+        </div>
+        <div class="box6">
+            <div class="box000">
+                <div class="box0000"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="box7">
+            <div class="box00000"></div>
+        </div>
+        <div class="box8"></div>
+    </div>
+
+</body>
+</html>

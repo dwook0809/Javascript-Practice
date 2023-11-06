@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body {
+        font-size: 1.25rem;
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(6, 219, 6);
+    }
+
+    h3 {
+        text-decoration: overline;
+        line-height: 40px;
+        letter-spacing: 20px;
+    }
+
+    .box {
+        background-color: orange;
+        height: 15vh;
+        width: 11vw;
+        box-shadow: 10px 10px 10px 5px inset rgb(49, 49, 49);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(10deg);
+    }
+
+    .computer {
+        margin-top: 2%;
+        width: 300px;
+        height: 400px;
+    }
+
+    div {
+        background-color: rgb(105, 226, 58);
+        display: inline
+    }
+
+    .merlion-1 {
+        width: 450px;
+    }
+
+    .merlion-2 {
+        width: 450px;
+        opacity: 0.25;
+    }
+
+    .fade-in {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        left: 0;
+        top: 0;
+        letter-spacing: 0.8rem;
+        animation: text-fade-in 5s;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @keyframes text-fade-in { /* 프레임 범위값 지정 */
+        from {
+            opacity: 0;
+            transform: translateY(7em);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+</style>
+
+<body>
+    <h1>(h1태그) hi</h1>
+    <h3>(h3태그) hello</h3>
+    <span>(span태그) hi</span>
+    <span>(span태그) hello</span>
+    <div>(div태그) 반갑습니다</div>
+    <p>(p태그) 반가워요</p>
+    <p>(p태그) 안녕하세요</p>
+    <a href="">(a태그) 반갑습니다</a>
+    <strong>(strong태그) 반가워요</strong>
+    <ol>
+        <li>(ol태그) 1</li>
+    </ol>
+    <ul>
+        <li>(ul태그) 2</li>
+    </ul>
+    <div class="box">box</div>
+    <img src="./image/1980computer.jpg" alt="1980년대 컴퓨터" class="computer">
+    <label for="">인사법 : </label>
+    <input type="text">
+    <div>(div 태그) 환영합니다</div>
+    <pre>(pre태그) 동해물과 백두산이 마르고 닳도록
+        하느님이            보우하사 길이 보우하세
+        무궁화 삼천리                           화려강산
+        대한사람 대한으로 길이 보전하세</pre>
+    <img src="./image/merlion.jpg" alt="머라이언상" class="merlion-1">
+    <img src="./image/merlion.jpg" alt="머라이언상" class="merlion-2">
+    <div class="fade-in">(fade-in 효과) 반가워요</div>
+</body>
+</html>
